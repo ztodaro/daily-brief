@@ -1,0 +1,24 @@
+{
+  "name": "daily-brief",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ztodaro/daily-brief.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ztodaro/daily-brief/issues"
+  },
+  "homepage": "https://github.com/ztodaro/daily-brief#readme",
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}
