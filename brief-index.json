@@ -14,5 +14,13 @@
     "path": "posts/2026-02-10.html",
     "tags": ["local-ai", "openclaw", "claude-code", "skills", "apple-hardware", "paywall-optimization", "air-project", "conversion-rate"],
     "bookmarkCount": 4
+  },
+  {
+    "date": "2026-02-11",
+    "title": "The Agent Gap",
+    "subtitle": "Everyone's talking about agents. A tiny fraction are actually building with them. The chasm is widening.",
+    "path": "posts/2026-02-11.html",
+    "tags": ["claude-code", "seo-automation", "agents", "openclaw", "obsidian", "tdd", "deepwiki", "parakeet", "voice-transcription", "ai-native-devices", "agent-gap"],
+    "bookmarkCount": 12
   }
 ]

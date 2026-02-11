@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Brief: Feb 11, 2026 - The Agent Gap</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-secondary: #f78166;
+            --border: #30363d;
+            --green: #3fb950;
+            --purple: #a371f7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .date { color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h1 { font-size: 2rem; margin: 0.5rem 0; background: linear-gradient(135deg, var(--accent), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--text-secondary); font-size: 1.1rem; }
+        section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.3rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            transition: border-color 0.2s;
+        }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+        .card h3 a { color: var(--text-primary); text-decoration: none; }
+        .card h3 a:hover { color: var(--accent); }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; }
+        .card .meta { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; display: flex; gap: 1rem; }
+        .card .meta span { display: flex; align-items: center; gap: 0.25rem; }
+        .quick-hit {
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--border);
+            margin-bottom: 0.5rem;
+            border-radius: 0 6px 6px 0;
+        }
+        .quick-hit:hover { border-left-color: var(--accent); }
+        .quick-hit a { color: var(--accent); text-decoration: none; }
+        .deep-dive {
+            background: var(--bg-secondary);
+            border: 1px solid var(--purple);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .deep-dive h3 { color: var(--purple); margin-bottom: 0.75rem; }
+        .editorial {
+            background: linear-gradient(135deg, rgba(88,166,255,0.05), rgba(163,113,247,0.05));
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .editorial p { margin-bottom: 0.75rem; }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .tag {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+        }
+        footer { border-top: 1px solid var(--border); padding-top: 1.5rem; color: var(--text-secondary); font-size: 0.85rem; text-align: center; }
+        a { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date">Wednesday, February 11, 2026</div>
+        <h1>The Agent Gap</h1>
+        <p class="subtitle">Everyone's talking about agents. A tiny fraction are actually building with them. The chasm is widening.</p>
+    </header>
+
+    <section>
+        <h2>🏆 Top Picks</h2>
+
+        <div class="card">
+            <h3><a href="https://x.com/codyschneiderxx/status/2021283027775561898" target="_blank">Claude Code + SEO APIs = Unfair Advantage</a></h3>
+            <p>Cody Schneider dropped a workflow combining Claude Code with Keywords Everywhere and DataForSEO APIs via a simple <code>.env</code> file. The agent pulls your full keyword universe, analyzes competitor content, generates optimized pages — programmatic SEO on autopilot. This is the kind of compound leverage that makes traditional SEO agencies obsolete overnight.</p>
+            <div class="meta">
+                <span>@codyschneiderxx</span>
+                <span>❤️ 647</span>
+                <span>🔖 1,685</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/edbutlerx/status/2021381658767761780" target="_blank">OpenClaw + Obsidian + GitHub = Copywriting Stack</a></h3>
+            <p>Ed Butler shared a workflow that's basically what you're already doing — OpenClaw workspace as a Git repo, Obsidian vault inside it, Git plugin for sync. Instant version-controlled AI-assisted writing. The OpenClaw community is independently converging on the patterns you've been building. Validation.</p>
+            <div class="meta">
+                <span>@edbutlerx</span>
+                <span>❤️ 4</span>
+                <span>🔖 9</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/RyanCarniato/status/2021367918328725943" target="_blank">TDD Finally Makes Sense (Thanks to AI)</a></h3>
+            <p>Ryan Carniato (SolidJS creator) declared the inversion point: AI makes TDD actually save time instead of waste it. Write your tests first, hand them to Claude Code, and it implements to pass. The tests become the spec. This is a workflow shift worth adopting for AIR website development.</p>
+            <div class="meta">
+                <span>@RyanCarniato</span>
+                <span>❤️ 1,998</span>
+                <span>🔖 373</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/pusongqi/status/2021260622437155099" target="_blank">Multi-Agent Threads: Slack Channels for AI</a></h3>
+            <p>Steven Pu demoed assigning different agents to the same thread — like Slack channels populated entirely by agents. This is the collaboration layer that's been missing. Imagine Kate + a research agent + a code agent all working a single thread. The future of agent orchestration looks a lot like group chat.</p>
+            <div class="meta">
+                <span>@pusongqi</span>
+                <span>❤️ 1,490</span>
+                <span>🔖 2,454</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/maryrosecook/status/2021385244134527135" target="_blank">Parakeet v3: Transcription Before You Hit Enter</a></h3>
+            <p>Mary Rose Cook is raving about NVIDIA's Parakeet v3 for local voice-to-text. It's so fast the transcription finishes before you can press submit. 600M params, runs locally, 98% accuracy, transcribes 60 minutes of audio in ~1 second. This could replace your Whisper setup entirely.</p>
+            <div class="meta">
+                <span>@maryrosecook</span>
+                <span>❤️ 224</span>
+                <span>🔖 267</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚡ Quick Hits</h2>
+
+        <div class="quick-hit">
+            <a href="https://x.com/oliviscusAI/status/2021244380607123492" target="_blank"><strong>DeepWiki</strong></a> — Replace "github" with "deepwiki" in any repo URL for instant AI-generated docs + chat. Open source too. (@oliviscusAI)
+        </div>
+
+        <div class="quick-hit">
+            <a href="https://x.com/bbalfour/status/2021291284779106407" target="_blank"><strong>AI Persona Feedback</strong></a> — Brian Balfour shipped a tool that creates AI personas matching your real users, points them at any URL/prototype, gets feedback in minutes. (@bbalfour)
+        </div>
+
+        <div class="quick-hit">
+            <a href="https://x.com/AviFelman/status/2021276103281668363" target="_blank"><strong>Invest in AI-Leveraged Assets</strong></a> — Avi Felman argues traditional salary/business models are dangerous now. Invest deeply in assets that gain most from rapid AI change. (@AviFelman — 2.2K likes)
+        </div>
+
+        <div class="quick-hit">
+            <a href="https://x.com/coreyhainesco/status/2021365573918261335" target="_blank"><strong>Landing Page Copy in One Shot</strong></a> — Corey Haines teasing an AI Skill that generates full landing page copy from scratch. Relevant for AIR website. (@coreyhainesco)
+        </div>
+
+        <div class="quick-hit">
+            <a href="https://x.com/NickADobos/status/2021440926728716509" target="_blank"><strong>Codex Phone</strong></a> — Nick Dobos pitching a phone with no OS, just a CLI + Codex. Wild idea, but the "AI-native device" thesis keeps coming up. (@NickADobos)
+        </div>
+
+        <div class="quick-hit">
+            <a href="https://x.com/morganlinton/status/2021353881658364295" target="_blank"><strong>Obsidian Evangelism</strong></a> — Morgan Linton pushing Obsidian as life-changing. Obsidian keeps showing up in your feed — the tool is having a moment. (@morganlinton)
+        </div>
+
+        <div class="quick-hit">
+            <a href="https://x.com/jumperz/status/2021333173448122595" target="_blank"><strong>The Agent Gap is Real</strong></a> — JUMPERZ nails it: same small group building increasingly wild agent setups while most people can't even configure their LLM. The gap is massive and growing. (@jumperz)
+        </div>
+    </section>
+
+    <section>
+        <h2>🔬 Deep Dive</h2>
+
+        <div class="deep-dive">
+            <h3>DeepWiki: Instant Docs for Any Codebase</h3>
+            <p>The DeepWiki trick Oliver Prompts shared is deceptively powerful. Swap "github" for "deepwiki" in any GitHub URL and you get AI-generated documentation with architecture diagrams, component breakdowns, and a conversational interface to ask questions about the code.</p>
+            <p>It's built by <a href="https://github.com/AsyncFuncAI/deepwiki-open" target="_blank">AsyncFuncAI and is fully open source</a>. Under the hood it analyzes repo structure, generates wiki-style docs with Mermaid diagrams, and indexes everything for chat. Devin (Cognition's coding agent) has already integrated it into their docs.</p>
+            <p><strong>Why this matters for you:</strong> Point it at the AIR repo when it grows. Instant technical docs for contributors. Also useful for evaluating any open-source tool before adopting it — just DeepWiki the repo instead of reading raw source.</p>
+        </div>
+
+        <div class="deep-dive">
+            <h3>Parakeet v3: The Whisper Killer?</h3>
+            <p>NVIDIA's Parakeet TDT v3 is a 600M parameter ASR model that's rewriting the benchmarks. The numbers are absurd: <strong>60 minutes of audio transcribed in ~1 second</strong> on an A100, with 98% accuracy. It supports audio up to 24 minutes with full attention or 3 hours with local attention.</p>
+            <p>It runs locally via NeMo toolkit, supports punctuation and capitalization natively, and produces accurate timestamps. The model is on <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3" target="_blank">HuggingFace</a> right now.</p>
+            <p><strong>Why this matters for you:</strong> Your current setup uses Whisper base for voice transcription on the Mac Mini. Parakeet v3 could be significantly faster and more accurate — though it may need the 3090 PC's GPU. Worth testing as a Whisper replacement, especially if voice-to-text becomes a bigger part of your workflow with OpenClaw.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📋 Kate's Take</h2>
+        <div class="editorial">
+            <p>Today's bookmarks paint a clear picture: <strong>the agent-powered workflow stack is crystallizing fast, and you're already on the right side of the gap.</strong></p>
+
+            <p>JUMPERZ's observation is today's headline because it's the meta-truth: a small group of builders (you included) is compounding capability daily while the majority still can't get basic LLM setups running. Every day that gap widens, your head start gets more valuable. The OpenClaw + Obsidian + GitHub combo Ed Butler shared? You've been running that stack. The Claude Code + API mashups Cody Schneider is evangelizing? That's your workflow.</p>
+
+            <p>Three actionable threads:</p>
+            <p><strong>1. TDD + Claude Code for AIR.</strong> Ryan Carniato's insight is immediately applicable. Write tests that describe what the AIR website calculators should do, then let Claude Code implement to pass. Faster, more reliable, better specs.</p>
+
+            <p><strong>2. Evaluate Parakeet v3.</strong> If it runs on the 3090, it could dramatically improve voice input quality for both OpenClaw instances. Worth a Claude Code prompt to Zach's PC to test it.</p>
+
+            <p><strong>3. DeepWiki in your toolbelt.</strong> Bookmark it. Next time you're evaluating an open-source dependency, deepwiki.com/{owner}/{repo} instead of reading raw GitHub. Saves hours.</p>
+
+            <p>The recurring theme across the last three briefs: <strong>the tools are ready, the playbooks are emerging, and the winners are the people who actually build.</strong> You're building. Keep shipping.</p>
+        </div>
+    </section>
+
+    <div class="tags">
+        <span class="tag">claude-code</span>
+        <span class="tag">seo-automation</span>
+        <span class="tag">agents</span>
+        <span class="tag">openclaw</span>
+        <span class="tag">obsidian</span>
+        <span class="tag">tdd</span>
+        <span class="tag">deepwiki</span>
+        <span class="tag">parakeet</span>
+        <span class="tag">voice-transcription</span>
+        <span class="tag">ai-native-devices</span>
+        <span class="tag">agent-gap</span>
+    </div>
+
+    <footer>
+        <p>Daily Brief by Kate Morgan · <a href="../index.html">Archive</a></p>
+    </footer>
+</body>
+</html>
