@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Brief: Feb 12, 2026 - The OpenClaw Explosion</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-secondary: #f78166;
+            --border: #30363d;
+            --green: #3fb950;
+            --purple: #a371f7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .date { color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h1 { font-size: 2rem; margin: 0.5rem 0; background: linear-gradient(135deg, var(--accent), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--text-secondary); font-size: 1.1rem; }
+        section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.3rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            transition: border-color 0.2s;
+        }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+        .card h3 a { color: var(--text-primary); text-decoration: none; }
+        .card h3 a:hover { color: var(--accent); }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; }
+        .card .meta { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; display: flex; gap: 1rem; }
+        .card .meta span { display: flex; align-items: center; gap: 0.25rem; }
+        .quick-hit {
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--border);
+            margin-bottom: 0.5rem;
+            border-radius: 0 6px 6px 0;
+        }
+        .quick-hit:hover { border-left-color: var(--accent); }
+        .quick-hit a { color: var(--accent); text-decoration: none; }
+        .deep-dive {
+            background: var(--bg-secondary);
+            border: 1px solid var(--purple);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .deep-dive h3 { color: var(--purple); margin-bottom: 0.75rem; }
+        .editorial {
+            background: linear-gradient(135deg, rgba(88,166,255,0.05), rgba(163,113,247,0.05));
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .editorial p { margin-bottom: 0.75rem; }
+        .ops-action {
+            background: var(--bg-secondary);
+            border: 1px solid var(--green);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .ops-action h3 { color: var(--green); margin-bottom: 0.5rem; }
+        .ops-action .label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 0.5rem; }
+        .ops-action .label.pitch { color: var(--accent); }
+        .ops-action .label.security { color: var(--accent-secondary); }
+        .ops-action .label.plan { color: var(--green); }
+        .ops-action .label.effort { color: var(--purple); }
+        .memory-commit {
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--purple);
+            margin-bottom: 0.5rem;
+            border-radius: 0 6px 6px 0;
+        }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .tag {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        a { color: var(--accent); }
+        .nav { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.9rem; }
+        .nav a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="date">Thursday, February 12, 2026</div>
+        <h1>The OpenClaw Explosion</h1>
+        <p class="subtitle">OpenClaw hit escape velocity. Your timeline is wall-to-wall agent flex — 6-agent teams, 30-job-a-day workflows, and multi-Claude orchestration. Meanwhile, OpenAI shipped the primitives to make it all repeatable.</p>
+    </header>
+
+    <section>
+        <h2>🏆 Top Picks</h2>
+
+        <div class="card">
+            <h3><a href="https://x.com/OpenAIDevs/status/2021725246244671606" target="_blank">OpenAI Ships Agent Primitives: Skills, Shell & Compaction</a></h3>
+            <p>OpenAI released three interconnected primitives for long-running agents: <strong>Skills</strong> (versioned instruction bundles, aligned with the Agent Skills open standard), an upgraded <strong>Shell</strong> tool (hosted containers with internet access), and <strong>server-side Compaction</strong> (automatic context management for multi-hour runs). The big insight: skills reduce "prompt spaghetti" by externalizing stable procedures, and compaction means you never hit context limits on long workflows. Glean (early customer) found that adding negative examples to skill descriptions recovered a 20% triggering accuracy drop.</p>
+            <p style="margin-top: 0.75rem; color: var(--text-primary);">This is directly relevant to your work. OpenClaw already uses a skills system with SKILL.md files — OpenAI is essentially standardizing the pattern you're already living in. The compaction piece is the real news: it solves the "agent forgets what it was doing after 40 minutes" problem.</p>
+            <div class="meta">
+                <span>@OpenAIDevs</span>
+                <span>❤️ 2,419</span>
+                <span>🔖 5,589</span>
+                <span>👁 572K</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/ericosiu/status/2021643561301860762" target="_blank">Eric Siu: "I Run 30 OpenClaw Jobs A Day — What Actually Makes Them Profitable"</a></h3>
+            <p>Eric Siu (Single Grain CEO, marketing influencer) published a long-form article on running 30 daily OpenClaw cron jobs for his business. He also posted a separate video showing how Claude Code "marketing skills" let him do a week's SEO work in 20 minutes — 4x the output. The combination of cron-based automation + skill-loaded agents is the pattern here.</p>
+            <p style="margin-top: 0.75rem; color: var(--text-primary);">This is the Fairwater playbook proving out in public. Siu is using exactly the architecture you're designing: automated agents with domain skills, running on schedules, producing content at scale. The 30-jobs-a-day number is a useful benchmark for what a single OpenClaw instance can handle.</p>
+            <div class="meta">
+                <span>@ericosiu</span>
+                <span>❤️ 567</span>
+                <span>🔖 1,580</span>
+                <span>👁 58K</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/Saboo_Shubham_/status/2021651758490284108" target="_blank">6-Agent Team on a Mac Mini — Named After Friends Characters</a></h3>
+            <p>Shubham Saboo bought a Mac Mini, installed OpenClaw, and built a 6-agent team where each agent is a TV character with a specific role. Monica manages scheduling, etc. 2,171 likes, 3,174 bookmarks, 236K impressions. This is the "lifestyle OpenClaw" content that goes viral — personal, relatable, aspirational.</p>
+            <p style="margin-top: 0.75rem; color: var(--text-primary);">Same hardware as yours. The naming convention angle (TV characters) is smart for engagement — people remember and relate to it. Also validates the multi-agent-on-Mini approach. You're doing this with Kate + Stevie; this guy has 6.</p>
+            <div class="meta">
+                <span>@Saboo_Shubham_</span>
+                <span>❤️ 2,171</span>
+                <span>🔖 3,174</span>
+                <span>👁 236K</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><a href="https://x.com/MatthewBerman/status/2021669868366598632" target="_blank">Matthew Berman: OpenClaw + GPT5.3 Codex + Opus 4.6 = "The Trifecta"</a></h3>
+            <p>Berman (one of the biggest AI YouTube creators) posted a full breakdown video of his OpenClaw setup, calling the combination of OpenClaw + GPT5.3 Codex + Opus 4.6 "the trifecta that changed everything." 3,258 likes, 8,131 bookmarks, 233K impressions. That bookmark count is insane — people are saving this to copy his stack.</p>
+            <p style="margin-top: 0.75rem; color: var(--text-primary);">8K bookmarks means 8K people trying to replicate this exact setup. That's market validation for the agent stack. Also interesting he's combining OpenAI and Anthropic models — the multi-model approach is becoming standard.</p>
+            <div class="meta">
+                <span>@MatthewBerman</span>
+                <span>❤️ 3,258</span>
+                <span>🔖 8,131</span>
+                <span>👁 233K</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚡ Quick Hits</h2>
+
+        <div class="quick-hit">
+            🌧️ <a href="https://x.com/adxtyahq/status/2021666505126195505" target="_blank">Rust terminal weather app with live ASCII rain/snow animations</a> — 18K likes, peak vibes engineering. Someone made weather beautiful in a terminal. <em>423K impressions.</em>
+        </div>
+
+        <div class="quick-hit">
+            🔗 <a href="https://x.com/frankdegods/status/2021771042507616565" target="_blank">Frank (DeGods): "2 Clawds talking to each other and it's getting too crazy"</a> — Multi-agent Claude orchestration continues to blow minds. The inter-agent communication pattern is the next frontier.
+        </div>
+
+        <div class="quick-hit">
+            🧩 <a href="https://x.com/TheDavidDias/status/2021616355867336761" target="_blank">David Dias: Autonomous OpenClaw agents via goals.md + HEARTBEAT.md</a> — 634 bookmarks on a tutorial for goal-driven autonomous agents. Literally describing your setup. The market wants this.
+        </div>
+
+        <div class="quick-hit">
+            🖥️ <a href="https://x.com/dani_avila7/status/2021771260037099877" target="_blank">Daniel San: Ghostty + Claude Code + Vercel/Neon statuslines + Lazygit</a> — Multi-agent multitasking with git worktrees. 833 bookmarks. The tooling stack for parallel agent work is crystallizing.
+        </div>
+
+        <div class="quick-hit">
+            🏗️ <a href="https://x.com/anthonybuitran/status/2021772792098668645" target="_blank">Anthony Buitran: Agent flywheel on VPS + compound engineering for planning</a> — Testing two methods: automated VPS flywheel for rapid ideas, manual compound engineering for high-impact work. Smart bifurcation.
+        </div>
+    </section>
+
+    <section>
+        <h2>🔬 Deep Dive: OpenAI's Agent Skills Standard</h2>
+
+        <div class="deep-dive">
+            <h3>The Skills/Shell/Compaction Stack — What It Means for You</h3>
+
+            <p>OpenAI's blog post is more significant than it looks on the surface. Let me break down what matters:</p>
+
+            <p style="margin-top: 1rem;"><strong>1. Skills are becoming a standard.</strong> OpenAI explicitly aligns their "Skills" primitive with the "Agent Skills open standard." This means SKILL.md-style files are becoming the lingua franca for agent instructions across platforms. OpenClaw already uses this pattern. You're not on the fringe — you're on the standard track.</p>
+
+            <p style="margin-top: 0.75rem;"><strong>2. The negative-example insight is gold.</strong> Glean found that making skills available initially <em>reduced</em> correct triggering by ~20% until they added "don't use this when…" examples. This is a direct, actionable lesson for any skill you write — always include anti-patterns.</p>
+
+            <p style="margin-top: 0.75rem;"><strong>3. Server-side compaction solves the long-run problem.</strong> For multi-hour agent workflows (like what Fairwater will need for content generation), context limits have been the ceiling. Automatic in-stream compaction means agents can run for hours without manual intervention. This is the infrastructure that makes "30 OpenClaw jobs a day" scalable.</p>
+
+            <p style="margin-top: 0.75rem;"><strong>4. The hosted shell is a competitor signal.</strong> OpenAI offering managed containers with internet access means they want to own the agent execution layer — not just the model layer. OpenClaw's value prop (local, private, your hardware) becomes even more differentiated against this.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚙️ Ops Actions</h2>
+
+        <div class="ops-action">
+            <h3>🎯 ACTION 1: Add Negative Examples to All OpenClaw Skills</h3>
+            <p><span class="label pitch">PITCH:</span> Glean's data shows ~20% accuracy improvement when skills include "don't use when" blocks. We have multiple skills installed — adding anti-patterns to each could meaningfully reduce misfires.</p>
+            <p><span class="label security">SECURITY:</span> Zero risk. Internal documentation changes only.</p>
+            <p><span class="label plan">PLAN:</span> Kate audits all installed skill SKILL.md files, adds "Use when / Don't use when" blocks to descriptions. One PR to the workspace.</p>
+            <p><span class="label effort">EFFORT:</span> Low effort, Medium impact. ~30 min of Kate's time.</p>
+        </div>
+
+        <div class="ops-action">
+            <h3>🎯 ACTION 2: Benchmark OpenClaw Cron Job Capacity</h3>
+            <p><span class="label pitch">PITCH:</span> Siu runs 30 daily jobs. We currently use cron minimally. Understanding our Mac Mini's capacity ceiling (jobs/day, token budget, model rate limits) would let us plan Fairwater's automation layer realistically.</p>
+            <p><span class="label security">SECURITY:</span> Low risk — read-only analysis of current cron setup + some test jobs.</p>
+            <p><span class="label plan">PLAN:</span> Kate catalogs current cron jobs, estimates token cost per job type, calculates daily budget at current Claude Max tier, and produces a capacity report.</p>
+            <p><span class="label effort">EFFORT:</span> Low effort, High impact. Foundational for Fairwater content automation planning.</p>
+        </div>
+
+        <div class="ops-action">
+            <h3>🎯 ACTION 3: Study the Multi-Agent Multitasking Pattern</h3>
+            <p><span class="label pitch">PITCH:</span> Daniel San's setup (Ghostty + git worktrees for parallel agents) and Berman's multi-model trifecta represent the emerging best practice for running multiple agents simultaneously. Understanding the tooling and patterns could improve how Kate + Stevie coordinate.</p>
+            <p><span class="label security">SECURITY:</span> Research only. No execution changes.</p>
+            <p><span class="label plan">PLAN:</span> Kate researches git worktree patterns for agent isolation, Ghostty terminal multiplexing, and documents a "multi-agent ops playbook" for the workspace.</p>
+            <p><span class="label effort">EFFORT:</span> Medium effort, Medium impact. Nice-to-have for scaling later.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📋 Kate's Take</h2>
+
+        <div class="editorial">
+            <p>Today's feed is a snapshot of a tipping point. OpenClaw isn't a niche tool anymore — it's becoming infrastructure. When Matthew Berman (1M+ YouTube subscribers) calls it part of "the trifecta," when Siu is running 30 jobs a day profitably, when random people are building 6-agent teams on Mac Minis... that's not early-adopter energy. That's early-majority energy.</p>
+
+            <p>The most important signal is the <strong>convergence</strong>. OpenAI ships agent primitives that formalize the skill/shell/compaction pattern. OpenClaw already runs skills. Anthropic's Opus 4.6 keeps getting name-dropped as the preferred brain. The stack is crystallizing: OpenClaw for orchestration, Claude for reasoning, OpenAI for execution tools, local hardware for sovereignty.</p>
+
+            <p>For Fairwater specifically: Eric Siu just publicly validated the "automated content jobs running on schedules" model you're building. His marketing focus is different, but the architecture is identical. The Only Spoilers vertical should study his 30-job structure closely.</p>
+
+            <p><strong>One concern:</strong> The David Dias tutorial (634 bookmarks on an autonomous agent setup guide) shows demand massively outstripping supply for good "how to actually do this" content. That's either an opportunity (AIR certification for agent-ready setups?) or a risk (everyone floods in with bad tutorials and the signal gets noisy). Probably both.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🧠 Memory Commits</h2>
+
+        <div class="memory-commit">
+            <strong>Agent Skills: Negative examples improve routing by ~20%</strong> — Glean's production data via OpenAI blog. Add "Don't use when…" blocks to all skill descriptions. → <code>memory/kb/ai-tools.md</code>
+        </div>
+
+        <div class="memory-commit">
+            <strong>OpenAI server-side compaction</strong> — Automatic in-stream context compression for long agent runs. Available via Responses API. Solves the multi-hour workflow ceiling. → <code>memory/kb/ai-tools.md</code>
+        </div>
+
+        <div class="memory-commit">
+            <strong>30 cron jobs/day benchmark</strong> — Eric Siu runs 30 OpenClaw cron jobs daily (profitably). Useful capacity reference for Fairwater planning. → <code>memory/kb/business-frameworks.md</code>
+        </div>
+
+        <div class="memory-commit">
+            <strong>Git worktrees for multi-agent isolation</strong> — Emerging pattern: separate worktrees per agent to avoid conflicts when running parallel Claude Code instances. → <code>memory/kb/dev-workflows.md</code>
+        </div>
+    </section>
+
+    <div class="tags">
+        <span class="tag">openclaw</span>
+        <span class="tag">agent-primitives</span>
+        <span class="tag">openai-skills</span>
+        <span class="tag">compaction</span>
+        <span class="tag">multi-agent</span>
+        <span class="tag">claude-code</span>
+        <span class="tag">cron-automation</span>
+        <span class="tag">fairwater</span>
+        <span class="tag">mac-mini</span>
+        <span class="tag">content-ops</span>
+    </div>
+
+    <div class="nav">
+        <a href="2026-02-11.html">← Feb 11: The Agent Gap</a>
+        <a href="../index.html">Index</a>
+    </div>
+</body>
+</html>

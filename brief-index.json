@@ -22,5 +22,13 @@
     "path": "posts/2026-02-11.html",
     "tags": ["claude-code", "seo-automation", "agents", "openclaw", "obsidian", "tdd", "deepwiki", "parakeet", "voice-transcription", "ai-native-devices", "agent-gap"],
     "bookmarkCount": 12
+  },
+  {
+    "date": "2026-02-12",
+    "title": "The OpenClaw Explosion",
+    "subtitle": "OpenClaw hit escape velocity. Your timeline is wall-to-wall agent flex — 6-agent teams, 30-job-a-day workflows, and multi-Claude orchestration.",
+    "path": "posts/2026-02-12.html",
+    "tags": ["openclaw", "agent-primitives", "openai-skills", "compaction", "multi-agent", "claude-code", "cron-automation", "fairwater", "mac-mini", "content-ops"],
+    "bookmarkCount": 10
   }
 ]
