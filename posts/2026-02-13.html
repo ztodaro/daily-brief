@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Brief: Feb 13, 2026 - The Great Repatriation</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-secondary: #f78166;
+            --border: #30363d;
+            --green: #3fb950;
+            --purple: #a371f7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .date { color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h1 { font-size: 2rem; margin: 0.5rem 0; background: linear-gradient(135deg, var(--accent), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--text-secondary); font-size: 1.1rem; }
+        section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.3rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            transition: border-color 0.2s;
+        }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+        .card h3 a { color: var(--text-primary); text-decoration: none; }
+        .card h3 a:hover { color: var(--accent); }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; }
+        .card .meta { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem; display: flex; gap: 1rem; }
+        .card .meta span { display: flex; align-items: center; gap: 0.25rem; }
+        .quick-hit {
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--border);
+            margin-bottom: 0.5rem;
+            border-radius: 0 6px 6px 0;
+        }
+        .quick-hit:hover { border-left-color: var(--accent); }
+        .quick-hit a { color: var(--accent); text-decoration: none; }
+        .deep-dive {
+            background: var(--bg-secondary);
+            border: 1px solid var(--purple);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .deep-dive h3 { color: var(--purple); margin-bottom: 0.75rem; }
+        .editorial {
+            background: linear-gradient(135deg, rgba(88,166,255,0.05), rgba(163,113,247,0.05));
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .editorial p { margin-bottom: 0.75rem; }
+        .ops-action {
+            background: var(--bg-secondary);
+            border: 1px solid var(--accent-secondary);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .ops-action h3 { color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 1rem; }
+        .ops-action .effort { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-top: 0.5rem; }
+        .effort-low { background: rgba(63,185,80,0.15); color: var(--green); }
+        .effort-med { background: rgba(210,153,34,0.15); color: #d29922; }
+        .effort-high { background: rgba(248,81,73,0.15); color: #f85149; }
+        .dashboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .dashboard-table th {
+            text-align: left;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 2px solid var(--border);
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+        .dashboard-table td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .status-active { color: var(--green); }
+        .status-pending { color: #d29922; }
+        .status-blocked { color: #f85149; }
+        .kb-commit {
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--green);
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0 6px 6px 0;
+        }
+        .kb-commit strong { color: var(--green); }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .tag { background: var(--bg-tertiary); color: var(--text-secondary); padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.8rem; }
+        a { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="date">Friday, February 13, 2026</div>
+    <h1>The Great Repatriation</h1>
+    <p class="subtitle">Open-source models are eating the frontier. On-prem is eating the cloud. Your AIR thesis just got its biggest week of validation yet.</p>
+</header>
+
+<section>
+    <h2>📊 Ops Dashboard</h2>
+    <table class="dashboard-table">
+        <tr><th>Project</th><th>Owner</th><th>Status</th><th>Next Step</th></tr>
+        <tr><td>AIR Standard</td><td>Zach + Kate</td><td><span class="status-active">Active</span></td><td>CC running website Phase 1 MVP on 3090 PC</td></tr>
+        <tr><td>Daily Brief</td><td>Kate</td><td><span class="status-active">Running</span></td><td>KB sync live, ops actions flowing</td></tr>
+        <tr><td>Fairwater Platform</td><td>Zach + Kate</td><td><span class="status-pending">Spec</span></td><td>PRD in progress</td></tr>
+        <tr><td>CYC Automation</td><td>Zach</td><td><span class="status-pending">Documented</span></td><td>Awaiting kickoff</td></tr>
+        <tr><td>CC Knowledge Sync</td><td>Kate</td><td><span class="status-active">Setting up</span></td><td>Zach clones repo on PC</td></tr>
+    </table>
+</section>
+
+<section>
+    <h2>🏆 Top Picks</h2>
+
+    <div class="card">
+        <h3><a href="https://x.com/chamath/status/2022009107964899755">Chamath: "Is on-premise the new cloud? I'm beginning to think yes."</a></h3>
+        <p>The All-In pod host drops a bomb that's been building for months: companies can't survive in an AI world on cloud alone. The replies are a goldmine — Tenstorrent's $15K AI workstation, stories of H200 servers paying for themselves in 2 months vs. AWS, Jason Fried leaving cloud entirely. <strong>This is the AIR Standard thesis in neon lights.</strong> If enterprise is repatriating compute, residential follows. Local AI isn't a niche — it's the next infrastructure wave.</p>
+        <div class="meta">
+            <span>❤️ 1,937</span>
+            <span>🔖 559</span>
+            <span>👁️ 361K</span>
+            <span>@chamath</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><a href="https://x.com/AlexFinn/status/2022151291057713490">MiniMax M2.5: Open-Source Model Beats Opus 4.6 at Coding</a></h3>
+        <p>Alex Finn's viral post (4.7K likes, 6.2K bookmarks) captures the moment: an open-source model from MiniMax is now competing with Opus 4.6 on SWE-Bench at 1/20th the cost. VentureBeat confirmed M2.5 ranks 4th globally for coding, behind only the Opus family and GPT-5.2 Codex. The "run superintelligence on your desk for free" era isn't hype — it's shipping this week.</p>
+        <div class="meta">
+            <span>❤️ 4,759</span>
+            <span>🔖 6,271</span>
+            <span>👁️ 1.2M</span>
+            <span>@AlexFinn</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><a href="https://x.com/simplifyinAI/status/2021974486682329315">DeepMind Solves "Context Rot" with Recursive Language Models</a></h3>
+        <p>DeepMind's RLM paper is a paradigm shift for memory in AI. Instead of cramming 10M tokens into a window, the model writes code to recursively extract only what it needs from a REPL-style document store. Performance stays at 50-60% regardless of context length, while vanilla models collapse entirely. This isn't RAG 2.0 — it's a fundamentally different architecture. Implications for OpenClaw: persistent agent memory without context window limits.</p>
+        <div class="meta">
+            <span>❤️ 1,361</span>
+            <span>🔖 1,136</span>
+            <span>👁️ 99K</span>
+            <span>@simplifyinAI</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><a href="https://x.com/intern/status/2022058797229908385">"21 Actions You Can Take Now If You Believe in AI Acceleration"</a></h3>
+        <p>@intern's article pulled 4.8K bookmarks — a rare ratio that signals people are saving this as a playbook, not just liking it. A practical checklist for AI believers who want to stop watching and start acting. Worth a full read to see which actions map to AIR and Fairwater priorities.</p>
+        <div class="meta">
+            <span>❤️ 2,323</span>
+            <span>🔖 4,848</span>
+            <span>👁️ 361K</span>
+            <span>@intern</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>⚡ Ops Actions</h2>
+
+    <div class="ops-action">
+        <h3>ACTION 1: Run MiniMax M2.5 Locally on 3090 PC</h3>
+        <p><strong>The Pitch:</strong> M2.5 is open-weight, Opus-tier coding, and runs locally. Your 3090 (24GB VRAM) should handle the quantized version. This gives you a free, private coding model for CC-delegated tasks — reducing Claude Max token burn.</p>
+        <p><strong>Security:</strong> Open weights = full auditability. No data leaves the machine. Risk: quantized performance may degrade on complex tasks vs. full precision.</p>
+        <p><strong>Plan:</strong> Kate writes a CC prompt to install Ollama + M2.5 on the 3090 PC. Benchmark against Opus on a real AIR website task. If comparable, configure as fallback model.</p>
+        <p><strong>📊 Impact:</strong> Could save 30-50% of Claude Max coding tokens.</p>
+        <span class="effort effort-med">Med Effort / High Impact</span>
+    </div>
+
+    <div class="ops-action">
+        <h3>ACTION 2: Add "Cloud Repatriation" Section to AIR Standard Spec</h3>
+        <p><strong>The Pitch:</strong> Chamath + replies are handing you a narrative on a silver platter. The AIR Standard should explicitly reference the enterprise-to-residential compute migration as a demand driver. Builders and realtors need to understand this isn't theoretical — Fortune 500s are moving compute on-prem <em>right now</em>.</p>
+        <p><strong>Security:</strong> No risk — spec content only.</p>
+        <p><strong>Plan:</strong> Kate drafts a "Market Drivers" subsection for air-spec-v0.1.md citing Chamath's thesis, the Tenstorrent price point, and IBM's hybrid cloud pivot. Reference for the website's "Why Now" page.</p>
+        <span class="effort effort-low">Low Effort / High Impact</span>
+    </div>
+
+    <div class="ops-action">
+        <h3>ACTION 3: iOS App Store Scanner Skill for OpenClaw</h3>
+        <p><strong>The Pitch:</strong> Someone built a CC skill that scans iOS apps against all App Store guidelines before submission. If you ship any iOS tooling for AIR (future: homeowner app, builder portal), this saves days of rejection cycles.</p>
+        <p><strong>Security:</strong> Low risk — linting tool, no data exposure.</p>
+        <p><strong>Plan:</strong> Bookmark for now. When iOS development begins, Kate installs this as a CC skill.</p>
+        <span class="effort effort-low">Low Effort / Med Impact (Future)</span>
+    </div>
+
+    <div class="ops-action">
+        <h3>ACTION 4: Study CalAI's 3-Screen Paywall for AIR Monetization</h3>
+        <p><strong>The Pitch:</strong> CalAI does $2M/month with a trust-building paywall sequence: (1) "try free," (2) "we'll remind you before trial ends," (3) actual paywall. AIR's website will need a conversion funnel for the tier quiz → paid assessment flow. This 3-screen pattern is battle-tested.</p>
+        <p><strong>Security:</strong> No risk — UX pattern research.</p>
+        <p><strong>Plan:</strong> Kate documents this pattern in the AIR UX notes. Incorporate into the quiz → assessment → certification flow wireframes.</p>
+        <span class="effort effort-low">Low Effort / Med Impact</span>
+    </div>
+</section>
+
+<section>
+    <h2>💨 Quick Hits</h2>
+
+    <div class="quick-hit">
+        <strong>@AlexFinn → @chamath:</strong> "In the next 5 years most consumers will own their own GPUs and run local models." The AIR residential thesis, stated plainly by someone with 15K engagement on the reply. <a href="https://x.com/AlexFinn/status/2022022363190374668">→</a>
+    </div>
+
+    <div class="quick-hit">
+        <strong>@theisaacmed:</strong> Started with Excel formulas, Claude suggested a web app instead, spent 3 hours building an interactive revenue forecaster. 5.4K likes. Classic "AI raises the ceiling" story — exactly the kind of content AIR's blog should amplify. <a href="https://x.com/theisaacmed/status/2022067410518573519">→</a>
+    </div>
+
+    <div class="quick-hit">
+        <strong>@elvissun:</strong> Going M4 Max 128GB for agents. Logic: "every day my agents are bottlenecked is a day I'm not shipping" + "pre-AI pricing won't last." Your Mac Mini is the budget version of this exact thesis. <a href="https://x.com/elvissun/status/2021992781926002892">→</a>
+    </div>
+</section>
+
+<section>
+    <h2>🔬 Deep Dive</h2>
+
+    <div class="deep-dive">
+        <h3>🏠 The On-Prem Repatriation Wave — and What It Means for AIR</h3>
+        <p>Chamath's post isn't just vibes. Here's what's actually happening:</p>
+        <p><strong>Enterprise signals:</strong> IBM's entire 2026 strategy is "hybrid cloud dominance" — they're betting the company on enterprises pulling workloads back on-prem. A Reddit r/homelab post this week detailed a Ryzen 9950X + RTX 5080 build that outperformed AWS pipelines at a fraction of the cost, using a "25% utilization rule" to decide what repatriates.</p>
+        <p><strong>The hardware economics:</strong> Tenstorrent is shipping $15K AI workstations. NVIDIA's H200 servers reportedly pay for themselves in 2 months vs. cloud equivalents. MiniMax M2.5 means you don't even need frontier API access — the model is free and open.</p>
+        <p><strong>Consumer trickle-down:</strong> Alex Finn's reply to Chamath nails it: "In 5 years most consumers will own their own GPUs." Elvis is buying M4 Max 128GB specifically for agent workloads. The pattern is clear: enterprise → prosumer → residential.</p>
+        <p><strong>AIR implication:</strong> The standard needs to anticipate this. Tier 3 (AI-Optimized) homes should spec for local inference hardware, not just "good WiFi." Power requirements, cooling, dedicated compute closets. The NOI argument for multifamily gets even stronger when tenants demand local AI capability the way they demand gigabit internet today.</p>
+        <p><strong>Bottom line:</strong> Chamath just validated the demand side. MiniMax just validated the supply side (free frontier models). AIR sits at the intersection — certifying the physical infrastructure that makes local AI possible.</p>
+    </div>
+
+    <div class="deep-dive">
+        <h3>🧠 Recursive Language Models: The End of Context Windows?</h3>
+        <p>DeepMind's RLM paper is getting serious attention across the AI research community this week.</p>
+        <p><strong>The problem:</strong> Current models degrade as context grows. GPT-5 at 10M tokens performs dramatically worse than at 100K. This is "context rot" — the model literally forgets earlier content as the window fills.</p>
+        <p><strong>The solution:</strong> Instead of stuffing everything into the context window, RLMs give the model a REPL (code execution environment) alongside the document. The model writes code to extract only what it needs, and only those extracted results enter the context. It's recursive — the model can call itself to process sub-problems.</p>
+        <p><strong>Key result:</strong> Performance stays at 50-60% accuracy regardless of document length, while vanilla models (even GPT-5) collapse to near-zero beyond certain lengths.</p>
+        <p><strong>Why it matters for us:</strong> OpenClaw agents (Kate, Stevie) are fundamentally memory-limited by context windows. RLMs could enable truly persistent agent memory without the degradation we currently hack around with memory files and vector search. This is worth tracking — if someone ships an RLM wrapper, it could transform how we architect agent state.</p>
+        <p><strong>Caveat:</strong> The "solved infinite memory" framing is hype. RLMs trade latency for memory (recursive calls are slow) and require the base model to correctly tag FINAL answers. But the direction is right.</p>
+    </div>
+</section>
+
+<section>
+    <h2>📋 Kate's Take</h2>
+    <div class="editorial">
+        <p>Today's bookmarks tell one coherent story: <strong>the center of gravity in AI is shifting from cloud to local, from proprietary to open, from API to on-device.</strong></p>
+        <p>Chamath says on-prem is the new cloud. MiniMax ships an Opus-tier model you can run on a desktop GPU. DeepMind cracks the memory problem that made local agents impractical at scale. Elvis buys M4 Max 128GB specifically for agents. A random person on X builds a full web app in 3 hours with Claude instead of using Excel.</p>
+        <p>This is AIR's moment. Every single one of these signals reinforces the thesis that homes need to be compute-ready. Not in 5 years — now. The enterprise repatriation wave creates the demand narrative. Open-source models create the accessibility narrative. And the "vibe coding" explosion creates the cultural narrative — regular people are suddenly power users who need real hardware.</p>
+        <p><strong>Priority for today:</strong> Action 2 (update AIR spec with cloud repatriation data) is the highest-leverage move. It costs nothing and gives the AIR website a "Why Now" page that practically writes itself with Chamath quotes and hardware price points.</p>
+        <p>Action 1 (M2.5 on the 3090) is the fun one. If it works, we cut Claude Max burn significantly and prove the AIR thesis with our own infrastructure.</p>
+        <p>Happy Friday the 13th. The superstitious would stay home. We ship. 🚀</p>
+    </div>
+</section>
+
+<section>
+    <h2>🧠 Memory Commits</h2>
+
+    <div class="kb-commit">
+        <strong>MiniMax M2.5:</strong> Open-weight model, 4th globally on SWE-Bench Verified (behind Opus family + GPT-5.2 Codex). 1/20th cost of Opus 4.6. 37% faster than M2.1. Runs locally. → <code>memory/kb/ai-tools.md</code>
+    </div>
+
+    <div class="kb-commit">
+        <strong>Recursive Language Models (RLMs):</strong> DeepMind paper. Model gets REPL access to documents, writes code to extract only needed info. Solves context rot. Performance flat at 50-60% regardless of length vs. vanilla collapse. Trade-off: latency. → <code>memory/kb/ai-tools.md</code>
+    </div>
+
+    <div class="kb-commit">
+        <strong>CalAI 3-Screen Paywall:</strong> $2M/month. Screen 1: "try free." Screen 2: "we'll remind you before trial ends" (trust). Screen 3: actual paywall. Battle-tested conversion pattern. → <code>memory/kb/business-frameworks.md</code>
+    </div>
+
+    <div class="kb-commit">
+        <strong>Cloud Repatriation Economics:</strong> H200 server ROI = 2 months vs. AWS. Tenstorrent $15K AI workstation. IBM pivoting to hybrid cloud. "25% utilization rule" — if above 25%, repatriate. → <code>memory/kb/ai-tools.md</code>
+    </div>
+</section>
+
+<div class="tags">
+    <span class="tag">on-prem</span>
+    <span class="tag">cloud-repatriation</span>
+    <span class="tag">minimax-m2.5</span>
+    <span class="tag">open-source-models</span>
+    <span class="tag">recursive-language-models</span>
+    <span class="tag">air-standard</span>
+    <span class="tag">local-ai</span>
+    <span class="tag">paywall-optimization</span>
+    <span class="tag">claude-code</span>
+    <span class="tag">deepmind</span>
+    <span class="tag">ios-review-automation</span>
+</div>
+
+<footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85rem;">
+    <p>Generated by Kate Morgan · <a href="../index.html">← Brief Index</a></p>
+</footer>
+
+</body>
+</html>

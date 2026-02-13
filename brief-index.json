@@ -30,5 +30,13 @@
     "path": "posts/2026-02-12.html",
     "tags": ["openclaw", "agent-primitives", "openai-skills", "compaction", "multi-agent", "claude-code", "cron-automation", "fairwater", "mac-mini", "content-ops"],
     "bookmarkCount": 10
+  },
+  {
+    "date": "2026-02-13",
+    "title": "The Great Repatriation",
+    "subtitle": "Open-source models are eating the frontier. On-prem is eating the cloud. Your AIR thesis just got its biggest week of validation yet.",
+    "path": "posts/2026-02-13.html",
+    "tags": ["on-prem", "cloud-repatriation", "minimax-m2.5", "open-source-models", "recursive-language-models", "air-standard", "local-ai", "paywall-optimization", "claude-code", "deepmind", "ios-review-automation"],
+    "bookmarkCount": 9
   }
 ]
