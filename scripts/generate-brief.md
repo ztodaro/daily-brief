@@ -70,6 +70,9 @@ Like a smart collaborator sharing finds over coffee. Intimate but not romantic. 
 ## Email Format
 Short — headline, 3 bullet highlights, link to full brief. Not the whole brief in the email.
 
+## Priority Threads
+Before generating, check `/Users/zachopenclaw/daily-brief/scripts/priority-threads.json` for threads Zach has flagged for deep analysis. These get top billing in the brief — full deep dive with outside research, not just a summary.
+
 ## Technical Notes
 - GitHub Pages URL: https://ztodaro.github.io/daily-brief/posts/YYYY-MM-DD.html
 - gog email: `gog gmail send --account exec@fairwaterventures.com --to ztodaro@gmail.com --subject "Daily Brief: Feb 9" --body-html "<html>...</html>"`

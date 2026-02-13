@@ -1,0 +1,9 @@
+[
+  {
+    "id": "2022009107964899755",
+    "author": "chamath",
+    "topic": "On-premise vs cloud for AI - is on-prem the new cloud?",
+    "added": "2026-02-12",
+    "notes": "Zach flagged as high-alpha. Chamath thesis: on-prem is the only way for companies to maintain AI capability without blowing up costs. Jason Fried quote-tweeted about leaving cloud, saving millions. Replies include: Tenstorrent $15K AI workstation, H200 server at 2 months AWS cost, hybrid approaches, data sovereignty. DIRECTLY relevant to AIR Standard thesis (local compute, privacy-first). Deep dive this in next brief with outside research on: cloud repatriation trend, enterprise on-prem AI spend forecasts, implications for residential AI compute."
+  }
+]
